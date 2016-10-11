@@ -15,6 +15,7 @@ public class Problema1 {
     
     public static int pedirDato(){
         int anyo;
+        System.out.println(" *** Comprobar si es o no un año bisiesto ***");
         Scanner teclado = new Scanner(System.in);
         System.out.println("Introduce el año: ");
         anyo = teclado.nextInt();
