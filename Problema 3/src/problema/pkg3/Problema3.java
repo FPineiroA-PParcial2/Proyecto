@@ -7,9 +7,6 @@ import java.util.Scanner;
  */
 public class Problema3 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         // TODO code application logic here
         int num;
@@ -17,7 +14,7 @@ public class Problema3 {
         mostrar(num);
     }
     
-    public static int pedirNum(){
+    public static int pedirNum(){ //Se pide el numero para ser comprobado
         int num;
         System.out.println(" *** Calculadora de números factoriales ***");
         Scanner teclado = new Scanner(System.in);
@@ -25,12 +22,12 @@ public class Problema3 {
         num = teclado.nextInt();
         return num;
     }
-    public static void mostrar(int num){
+    public static void mostrar(int num){ //Se hace la operacion para obtener el factorial
         int factorial = 1;
     for(int i = num; i>0;i--){
         factorial = factorial * i;
     }
-        System.out.println("El factorial de " + num+ " es: "+factorial);
+        System.out.println("El factorial de " + num+ " es: "+factorial); //Se muestra el resultado
     }
     
 }
