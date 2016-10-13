@@ -19,7 +19,7 @@ public class Problema8 {
         
         
     }
-     public static float solicitarDatos(String tipo){
+     public static float solicitarDatos(String tipo){ //Se piden los catetos para ser evaluados
         float dato;
         Scanner teclado = new Scanner(System.in);
         System.out.println("Introduzca el: " + tipo);
@@ -29,8 +29,8 @@ public class Problema8 {
     
      public static void mostrar(float a, float b){
        double resp;
-       resp= Math.sqrt(Math.pow(a,2)+Math.pow(b, 2));
-         System.out.println("La hipotenusa es: " + resp);
+       resp= Math.sqrt(Math.pow(a,2)+Math.pow(b, 2));//Operacion para obtener hipotenusa
+         System.out.println("La hipotenusa es: " + resp); //Se muestra el resultado
      }
     
 }
