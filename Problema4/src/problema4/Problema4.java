@@ -16,7 +16,7 @@ public class Problema4 {
         resultado(far);
     }
     
-    public static float pedirDato(){
+    public static float pedirDato(){ //Se pide la temperatura a convertir
         float far;
         System.out.println(" *** Calculadora de grados °F a partir de °C ***");
         Scanner teclado = new Scanner(System.in);
@@ -25,9 +25,9 @@ public class Problema4 {
         return far;
     }
     
-    public static void resultado(float far){
+    public static void resultado(float far){ //Se hace la conversion de °C a °F
         float respuesta;
         respuesta = (far*9)/5 + 32;
-        System.out.println(far+"°F en celcius es "+ respuesta +"°C");
+        System.out.println(far+"°F en celcius es "+ respuesta +"°C"); //Se muestra el resultado
     }
 }
