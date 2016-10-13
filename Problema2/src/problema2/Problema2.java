@@ -18,7 +18,7 @@ public class Problema2 {
         
     }
     
-    public static double pedirDato(){
+    public static double pedirDato(){ //Se solicita el dato para ser convertido
         double metro;
         System.out.println("*** Convertidor de metros a pies, millas y yardas *** ");
         Scanner teclado = new Scanner(System.in);
@@ -27,7 +27,7 @@ public class Problema2 {
         return metro;
     }
     
-    public static void mostrar(double metro){
+    public static void mostrar(double metro){ //Se hace la conversion y se muestra el resultado
         double pie,milla,yarda;
         pie = metro * 3.28084;
         milla = metro * 5280;
