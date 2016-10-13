@@ -7,9 +7,6 @@ import java.util.*;
  */
 public class Problema7 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         // TODO code application logic here
         float vel;
@@ -17,7 +14,7 @@ public class Problema7 {
         mostrar(vel);
     }
     
-    public static float solicitarDato(){
+    public static float solicitarDato(){ //Se piden los kilometros por hora a ser convertidos
         System.out.println(" *** Convertidor de km/h a m/s *** ");
         float vel;
         Scanner teclado = new Scanner(System.in);
@@ -25,10 +22,10 @@ public class Problema7 {
         vel = teclado.nextFloat();
         return vel;
     }
-    public static void mostrar(float vel){
+    public static void mostrar(float vel){ //Se hace el calculo para convertira  metros sobre segundo
         float ms;
         ms=vel*1000/3600;
-        System.out.println(vel+" km/h es " +ms+ " m/s");
+        System.out.println(vel+" km/h es " +ms+ " m/s"); //Se muestra el resultado
         
     }
     
