@@ -2,7 +2,7 @@
 package problema10;
 import java.util.*;
 
-/**
+/*
  * @author franc
  */
 public class Problema10 {
