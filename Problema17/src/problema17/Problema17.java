@@ -19,21 +19,21 @@ public class Problema17 {
         calcular(a,b);
     }
     
-    public static int pedirDato(String nu){
+    public static int pedirDato(String nu){ //Se piden los datos
         int num;
         Scanner teclado = new Scanner(System.in);
         System.out.println("Introduce el "+nu+" numero: ");
         return num = teclado.nextInt();
     }
     
-    public static void calcular(int a, int b){
+    public static void calcular(int a, int b){ //Se calcula el minimo comun divisor
         int r;
         if(b==0){
             r=a;
         } else{
             r=a%b;
         }
-        System.out.println("El minimo comun divisor de "+a+" y "+b+" es: "+r);
+        System.out.println("El minimo comun divisor de "+a+" y "+b+" es: "+r); //Se muestra el MCD
     }
             
 }
