@@ -27,7 +27,7 @@ public class Problema4 {
     
     public static void resultado(float far){ //Se hace la conversion de °C a °F
         float respuesta;
-        respuesta = (far*9)/5 + 32;
-        System.out.println(far+"°F en celcius es "+ respuesta +"°C"); //Se muestra el resultado
+        respuesta = far*(9/5) + 32;
+        System.out.println(far+"°C en farenheit es "+ respuesta +"°F"); //Se muestra el resultado
     }
 }
