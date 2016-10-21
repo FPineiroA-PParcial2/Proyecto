@@ -12,10 +12,14 @@ public class Problema18 {
     public static void main(String[] args) {
         // TODO code application logic here
         System.out.println("*** Calcular el minimo comun multiplo de dos numeros *** ");
-       int a,b;
+       int a,b,c,min;
         a=pedirDato("primer");    
         b=pedirDato("segundo");
-        mCm(a,b);
+        c=pedirDato("tercer");
+        min=mini(a,b,c);
+        mostrar(min);
+            
+        
     }
     
     public static int pedirDato(String num){  //Se piden los numeros a ser analizados
@@ -25,16 +29,28 @@ public class Problema18 {
         return nu=teclado.nextInt();
  
     }
-    public static void mCm(int a, int b){ //Se calcula el MCM
-        int min,mcm=0;
-        min=Math.min(a, b);
-        for(int i=1;i<=min;i++){
-            if(a%i==0 && b%i==0){
-                int mcd=i;
-                mcm=(a*b)/mcd;
+    
+   public static int mini (int a, int b, int c){
+            int min=1,m;
+        m=a;
+        if(m<b)m=b;
+        if(m<c)m=c;
+        for (int i=2;i<m;i++){
+            if (a%i==0||b%i==0||c%i==0){
+                min=min*i;
+                if (a%i==0) a=a/i;
+                if (b%i==0) b=b/i;
+                if (c%i==0) c=c/i;
             }
         }
-        System.out.println("El minimo comun multiplo de "+a+" y "+b+" es: "+mcm); //Se muestra el MCM
+        return min;
     }
+   
+   public static void mostrar(int min){
+       System.out.println("El MCM es: "+min);
+   }
+   }
     
-}
+ 
+    
+
