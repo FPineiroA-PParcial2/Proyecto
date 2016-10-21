@@ -19,7 +19,7 @@ public class Problema15 {
     
     public static int[][] llenarTabla(int[][] t){
         int i,j,s;
-        Random numAleatorio = new Random();
+        Random numAleatorio = new Random();  //Se hace el llenado random de los 10 numeros
         for(i=0;i<t.length;i++){
         for(j=0;j<t.length;j++){
                 if(j==10){
@@ -33,7 +33,7 @@ public class Problema15 {
                 }
                 if(i==10){
                     s=0;
-                    for(i=0;i<t.length-1;i++){
+                    for(i=0;i<t.length-1;i++){ //Se hace la suma de los numeros
                     s= t[i][j]+s;
                 }
                     t[i][j]= s;
@@ -43,7 +43,7 @@ public class Problema15 {
    return t;
 }
     
-    public static void mostrar(int[][] t){
+    public static void mostrar(int[][] t){  //Se muestra la tabla
         for(int i=0; i<t.length;i++){
             for(int j=0;j<t.length;j++){
                 if(i<11 && j<11){
